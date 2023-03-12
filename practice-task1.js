@@ -11,3 +11,11 @@ const setToLocalStorage=()=>{
     getValueInput.value='';
     localStorage.setItem(key,value)
 }
+const clearByKey=()=>{
+    const getInputKey=document.getElementById('getKey');
+    const keyName=getInputKey.value;
+    getInputKey.value='';
+
+    const getLocalKey=localStorage.getItem(keyName)
+    console.log(getLocalKey);
+}
