@@ -17,5 +17,6 @@ const clearByKey=()=>{
     getInputKey.value='';
 
     const getLocalKey=localStorage.getItem(keyName)
+    const removeLocalKey=localStorage.removeItem(keyName)
     console.log(getLocalKey);
 }
